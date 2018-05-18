@@ -48,7 +48,7 @@ install:
 - |
   composer install
   composer run-script --list
-  composer run-script symfony-skeleton --ansi
+  composer run-script -- symfony-skeleton --ansi
 
 before_script:
 # - curl_security_check composer.lock

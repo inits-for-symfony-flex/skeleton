@@ -48,11 +48,11 @@ install:
 - |
   composer install
   composer run-script --list
-  composer run-script symfony-skeleton
+  composer run-script symfony-skeleton --ansi
 
 before_script:
 # - curl_security_check composer.lock
-# - curl_security_check skeleton/composer.lock
+- curl_security_check skeleton/composer.lock
 #^ This checks that the application doesn't use dependencies with known security vulnerabilities
 
 
@@ -63,26 +63,24 @@ script:
 after_script:
 - ls --almost-all --color
 - ls --almost-all --color skeleton
-- pygmentize -l sh -O linenos=1 .env
-- pygmentize -l sh -O linenos=1 .env.dist
-- ls --color bin
-- php -s bin/console | elinks -force-html -dump-color-mode 4 -dump
-- ls --almost-all --recursive --color var
-- ls --color src
-- ls --recursive --color config
+- pygmentize -l sh -O linenos=1 skeleton/.env
+- pygmentize -l sh -O linenos=1 skeleton/.env.dist
+- ls --color skeleton/bin
+- php -s skeleton/bin/console | elinks -force-html -dump-color-mode 4 -dump
+- ls --almost-all --recursive --color skeleton/var
+- ls --color skeleton/src
+- ls --recursive --color skeleton/config
 
 
-- composer show --latest
+- composer --working-dir=skeleton show --latest
 - $GOPATH/bin/ccat composer.json
 - $GOPATH/bin/ccat skeleton/composer.json
 # - diff --minimal --side-by-side --color composer-dev.json composer.json needs a Ubuntu version newer than Trusty
 # - colordiff --minimal --side-by-side composer.json ../composer.json
 
 - composer exec --list
-- composer --working-dir=.. exec --list
-- composer run-script --list
-- composer --working-dir=.. run-script --list
+- composer --working-dir=skeleton exec --list
+- composer --working-dir=skeleton run-script --list
 
-- composer exec --verbose -- console list debug --ansi
-- composer exec -vvv -- console --ansi
-- composer --working-dir=.. exec -vvv -- console --ansi
+- composer --working-dir=skeleton exec --verbose -- console list debug --ansi
+- composer --working-dir=skeleton exec -vvv -- console --ansi

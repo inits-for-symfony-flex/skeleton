@@ -5,7 +5,6 @@ addons:
   apt:
     packages:
     - elinks # For dysplaying php files on console.
-    # - colordiff
 
 cache:
   directories:
@@ -16,11 +15,6 @@ php:
 - 7.2
 - 7.1
 - 7.0
-
-# env:
-  # global:
-  # - COMPOSER_BIN_DIR=bin
-  # - PATH=$TRAVIS_BUILD_DIR/bin::$PATH
 
 matrix:
   fast_finish: true
@@ -45,10 +39,9 @@ before_install:
 
 
 install:
-- |
-  composer install
-  composer run-script --list
-  composer run-script -- symfony-skeleton --ansi
+- composer install
+- composer run-script --list
+- composer run-script -- symfony-skeleton --ansi
 
 before_script:
 # - curl_security_check composer.lock
@@ -76,7 +69,6 @@ after_script:
 - $GOPATH/bin/ccat composer.json
 - $GOPATH/bin/ccat skeleton/composer.json
 
-- composer exec --list
 - composer --working-dir=skeleton exec --list
 - composer --working-dir=skeleton run-script --list
 

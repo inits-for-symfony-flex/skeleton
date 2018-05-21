@@ -75,8 +75,6 @@ after_script:
 - composer --working-dir=skeleton show --latest
 - $GOPATH/bin/ccat composer.json
 - $GOPATH/bin/ccat skeleton/composer.json
-# - diff --minimal --side-by-side --color composer-dev.json composer.json needs a Ubuntu version newer than Trusty
-# - colordiff --minimal --side-by-side composer.json ../composer.json
 
 - composer exec --list
 - composer --working-dir=skeleton exec --list

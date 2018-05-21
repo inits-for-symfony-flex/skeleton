@@ -5,7 +5,7 @@
     "license": "MIT",
     "require": {},
     "suggest": {
-        "symfony/skeleton": "Used by script symfony-skeleton",
+        "symfony/skeleton": "Used by script symfony-skeleton"
     },
     "scripts-descriptions": {
         "symfony-skeleton": "Create project using symfony/skeleton"

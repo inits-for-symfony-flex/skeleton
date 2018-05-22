@@ -9,8 +9,10 @@ Composer init script for symfony/skeleton
 * A `bin/console` file could be written (in another project) to remove the dependency from `symfony/framework-bundle`
 
 ## Similar projects
-* [symfony-flex-demo/script-skeleton](https://github.com/symfony-flex-demo/script-skeleton)
-* [symfony-skeleton-demo/skeleton](https://github.com/symfony-skeleton-demo/skeleton)
+* [symfony-flex-demo/script-skeleton](https://github.com/symfony-flex-demo/script-skeleton) (To be desactivated)
+
+### `composer.json` based on this init script
+* [symfony-skeleton-demo/skeleton](https://github.com/symfony-skeleton-demo/skeleton) 
 
 ## Going a little step further: web-server
 * [symfony-skeleton-demo/web-server](https://github.com/symfony-skeleton-demo/web-server)

@@ -21,6 +21,7 @@ Composer init script for symfony/skeleton
 # Documentation
 ## Console Applications
 * [*Build Your First Symfony Console Application with Dependency Injection Under 4 Files*](https://www.tomasvotruba.cz/blog/2018/05/28/build-your-first-symfony-console-application-with-dependency-injection-under-4-files/) by [Tomas Votruba](https://www.tomasvotruba.cz/) 2018
+* [*[RFC][Console][DI] Simplify adding DI container to CLI apps*](https://github.com/symfony/symfony/issues/27479)
 * [*How to Load --config With Services in Symfony Console*](https://www.tomasvotruba.cz/blog/2018/05/14/how-to-load-config-with-services-in-symfony-console/) by [Tomas Votruba](https://www.tomasvotruba.cz/) 2018
 * [*Better Console Applications*](https://speakerdeck.com/el_stoffel/better-console-applications) by [Christopher Hertel](https://speakerdeck.com/el_stoffel) 2018
 

@@ -6,6 +6,9 @@ Composer init script for symfony/skeleton
 * Script building a website
 
 # Relation to other projects
+* [Referenced By (URL to be updated)](https://phppackages.org/p/symfony-flex-init/skeleton)
+* [Dependents](https://packagist.org/packages/symfony-flex-init/skeleton/dependents)
+* [Suggesters](https://packagist.org/packages/symfony-flex-init/skeleton/suggesters)
 * A `bin/console` file could be written (in another project) to remove the dependency from `symfony/framework-bundle`
 
 ## Similar projects
